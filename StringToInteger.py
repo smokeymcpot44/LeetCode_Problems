@@ -1,7 +1,7 @@
 class Solution:
     def myAtoi(self, s: str) -> int:
         raw = s.strip() # for stripping all the white spaces before actual string
-        # checking corner conditions like empty strings or only signs
+        # checking boundary conditions like empty strings or only signs
         if not raw or raw == "+" or raw == "-":
             return 0
         raw_num = 0 
